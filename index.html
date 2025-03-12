@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./stely.css"> -->
+</head>
+<body>
+    <header>
+        <img class="banner" src="./img/banner_TopGifDesktop_oCoEua_8dd06239-b502-4182-94d9-a3a65356684d.webp"
+          alt="Banner" />
+        <div class="contenter">
+          <img src="./img/static_logo_techno_new.svg" alt="Logo" />
+          <div class="search-container">
+            <input class="input-div" type="text" placeholder="محصول , برند یا دسته مورد نظرتان را جستجو کنید" />
+            <img class="img-input" src="./img/search(2).svg" alt="Search Icon" />
+            
+          </div>
+          <div class="auth-contener">
+            <div class="auth-links">
+              <a href="#" id="login">ثبت نام</a>
+              <a href="#" id="dashboard">ورود</a>
+            </div>
+            <div class="shoppin">
+              <a href="./index1.html">
+                <h3>خانه</h3>
+                <img src="./img/home-simple (1).svg" alt="Shopping Cart" />
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="div-contenter" id="show-more-menu">
+          <ul>
+            <li class="hamburger-icon" alt="hamburger-menu" id="show-more-menu">
+              <a href="#">دسته بندی محصولات</a>
+              <img src="./img/menu.svg" class="hamburger-icon1" alt="Menu Icon" />
+              <ul class="hamburger-menu">
+                <li>
+                  <a href="#">موبایل</a><img src="./img/phone.svg" alt="Mobile" />
+                </li>
+                <li>
+                  <a href="#">لپ تاپ وتبلت</a><img src="./img/laptop.svg" alt="Laptop" />
+                </li>
+                <li>
+                  <a href="#">هدفون و هندزفری</a><img src="./img/handsFree.svg" alt="Headphones" />
+                </li>
+                <li>
+                  <a href="#">ساعت و بند هوشمند</a><img src="./img/handWatch.svg" alt="Smart Watch" />
+                </li>
+                <li>
+                  <a href="#">کامپیوتر و تجهیزات اداری</a><img src="./img/computerCase.svg" alt="Computer" />
+                </li>
+                <li>
+                  <a href="#">شبکه و ارتباطات</a><img src="./img/modem.svg" alt="Modem" />
+                </li>
+                <li>
+                  <a href="#">لوازم خانگی</a><img src="./img/fridge.svg" alt="Fridge" />
+                </li>
+                <li>
+                  <a href="#">صوتی و تصویری</a><img src="./img/TV.svg" alt="TV" />
+                </li>
+              </ul>
+            </li>
+            <li class="icon">
+              <a href="#">تکنوآف</a><img src="./img/discount-circle.svg" alt="Discount" />
+            </li>
+            <li class="icon">
+              <a href="#">خرید سازمانی</a><img src="./img/shopping-basket.svg" alt="Business Purchase" />
+            </li>
+            <li class="icon">
+              <a href="#">کارت هدیه</a><img src="./img/gift.svg" alt="Gift Card" />
+            </li>
+            <li class="icon">
+              <a href="#">خرید اقساطی</a><img src="./img/empty-wallet-add.svg" alt="Installment" />
+            </li>
+            <li class="icon">
+              <a href="#">خرید طلای دیجیتال</a><img src="./img/coins.svg" alt="Digital Gold" />
+            </li>
+            <li><a href="#">فروشنده شو</a></li>
+          </ul>
+        </div>
+      </header>
+    <main>
+        
+        <section id="cart">
+          <section id="total-price"><h5>جمع سبد خرید:<span>0</span></h5>
+            <button>ثبت سفارش</button>
+          </section>
+            <section id="cart-list"><h5>Empty</h5></section>
+        </section>
+    
+        <section id="products"></section>
+        </main>
+        <script src="./add.js"></script>
+    <script src="./app.js" type="module"></script>
+    <script src="./utils/httpReq.js" type="module"></script>
+    <script src="./models/products.js" type="module"></script>
+</body>
+</html>

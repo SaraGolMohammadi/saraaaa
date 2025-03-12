@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/stely.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <img class="banner" src="./img/banner_TopGifDesktop_oCoEua_8dd06239-b502-4182-94d9-a3a65356684d.webp"
+      alt="Banner" />
+    <div class="contenter">
+      <img  class="contenter-img"  src="./img/static_logo_techno_new.svg" alt="Logo" />
+      <div class="search-container">
+        <input class="input-div" type="text" placeholder="محصول , برند یا دسته مورد نظرتان را جستجو کنید" />
+        <img class="img-input" src="./img/search(2).svg" alt="Search Icon" />
+      </div>
+      <div class="auth-contener">
+        <div class="auth-links">
+          <a href="#" id="login">ثبت نام</a>
+          <a href="#" id="dashboard">ورود</a>
+        </div>
+        <div class="shoppin">
+          <a href="./index.html">
+            <h3>فروشگاه</h3>
+            <img src="./img/shopping-cart(1).svg" alt="Shopping Cart" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-contenter" id="show-more-menu">
+      <ul>
+        <li class="hamburger-icon" alt="hamburger-menu" id="show-more-menu">
+          <a href="#">دسته بندی محصولات</a>
+          <img src="./img/menu.svg" class="hamburger-icon1" alt="Menu Icon" />
+          <ul class="hamburger-menu">
+            <li>
+              <a href="#">موبایل</a><img src="./img/phone.svg" alt="Mobile" />
+            </li>
+            <li>
+              <a href="#">لپ تاپ وتبلت</a><img src="./img/laptop.svg" alt="Laptop" />
+            </li>
+            <li>
+              <a href="#">هدفون و هندزفری</a><img src="./img/handsFree.svg" alt="Headphones" />
+            </li>
+            <li>
+              <a href="#">ساعت و بند هوشمند</a><img src="./img/handWatch.svg" alt="Smart Watch" />
+            </li>
+            <li>
+              <a href="#">کامپیوتر و تجهیزات اداری</a><img src="./img/computerCase.svg" alt="Computer" />
+            </li>
+            <li>
+              <a href="#">شبکه و ارتباطات</a><img src="./img/modem.svg" alt="Modem" />
+            </li>
+            <li>
+              <a href="#">لوازم خانگی</a><img src="./img/fridge.svg" alt="Fridge" />
+            </li>
+            <li>
+              <a href="#">صوتی و تصویری</a><img src="./img/TV.svg" alt="TV" />
+            </li>
+          </ul>
+        </li>
+        <li class="icon">
+          <a href="#">تکنوآف</a><img src="./img/discount-circle.svg" alt="Discount" />
+        </li>
+        <li class="icon">
+          <a href="#">خرید سازمانی</a><img src="./img/shopping-basket.svg" alt="Business Purchase" />
+        </li>
+        <li class="icon">
+          <a href="#">کارت هدیه</a><img src="./img/gift.svg" alt="Gift Card" />
+        </li>
+        <li class="icon">
+          <a href="#">خرید اقساطی</a><img src="./img/empty-wallet-add.svg" alt="Installment" />
+        </li>
+        <li class="icon">
+          <a href="#">خرید طلای دیجیتال</a><img src="./img/coins.svg" alt="Digital Gold" />
+        </li>
+        <li><a href="#">فروشنده شو</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="slider-container">
+    <div class="slider">
+      <img src="./img/banner_SlideBanner_Kb9ve7_b1c97248-e993-4bc6-97cb-63c6b6796972.webp" alt="تصویر اول" />
+      <img src="./img/banner_SlideBanner_LmNEEJ_4187c93b-653e-42bb-aceb-71234be367a2.webp" alt="تصویر دوم" />
+      <img src="./img/banner_SlideBanner_n33AWK_24b5dd60-38c4-4f33-9c70-dbd4917eaec5.webp" alt="تصویر سوم" />
+      <img src="./img/banner_SlideBanner_pq7grN_a49912cd-302a-44e8-888f-08f94d6aef6c.webp" alt="تصویر چهارم" />
+      <img src="./img/banner_SlideBanner_X39fAm_17dc4d75-14b9-4839-a37b-bf28bae07e65.webp" alt="تصویر پنجم" />
+      <img src="./img/banner_SlideBanner_p9v9HK_4ff2cd18-f956-475e-bebc-275e38e5bdd4.webp" alt="تصویر ششم" />
+      <img src="./img/banner_SlideBanner_NHqR99_c6150930-dd4c-4ddd-a473-93207ad9fc48.webp" alt="تصویر هفتم" />
+      <img src="./img/banner_SlideBanner_rapwIv_04191eb8-9fe3-4816-ad66-15c4500a6c0f.webp" alt="تصویر هشتم" />
+    </div>
+    <button class="prev">
+      <img src="./img/chevron-left(1).svg" alt="Previous" />
+    </button>
+    <button class="next">
+      <img src="./img/chevron-right-alt-line.svg" alt="Next" />
+    </button>
+
+    <ul class="indicators">
+      <li onclick="goToSlide(0)"></li>
+      <li onclick="goToSlide(1)"></li>
+      <li onclick="goToSlide(2)"></li>
+      <li onclick="goToSlide(3)"></li>
+      <li onclick="goToSlide(4)"></li>
+      <li onclick="goToSlide(5)"></li>
+      <li onclick="goToSlide(6)"></li>
+      <li onclick="goToSlide(7)"></li>
+    </ul>
+  </div>
+
+  <div class="swiper-container slider1" id="swiper1">
+    <div class="swiper-wrapper">
+      <div class="circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_h3Jb0s_1a0d1a48-52d3-4328-a6f7-4e3f88e88b08.webp" />
+        <p>ساعت وبندهوشمند</p>
+      </div>
+
+      <div class=" circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_C5nLFh_15d59e70-3031-4683-92aa-e84f695590c7.webp" />
+        <p>گوشی دکمه ای</p>
+      </div>
+
+      <div class=" circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_FtSvB1_5f831f7b-e4ae-4e14-8ca9-d4788279405f.webp" />
+        <p>اسپیکر</p>
+      </div>
+
+      <div class=" circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_0gP7p4_b56c05c3-a71c-42ce-85ee-e9200257dc24 (1)2.webp" />
+        <p>تلویزیون</p>
+      </div>
+
+      <div class=" circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_kcKk6k_51dbf8d9-5cf3-4ab4-b999-c7407675e164.webp" />
+        <p>لوازم جانبی</p>
+      </div>
+
+
+      <div class="circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_PqWXyJ_4e4115c0-62c8-47e5-926a-4cca67dfda89.webp" />
+        <p>گیمینگ</p>
+      </div>
+
+      <div class="circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_EMo5Za_4a3eaaea-6b8a-4933-9364-337e18f6fe88.webp" />
+        <p>کامپیوتر</p>
+      </div>
+
+      <div class="circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_cPF7IB_e0939846-1cd4-4360-850e-712b3db1e564.webp" />
+        <p>هدفون</p>
+      </div>
+
+
+      <div class="circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_hetcU0_dab86464-0d65-4a2b-b503-cc04027c8531.webp" />
+        <p>ماشین اداری</p>
+      </div>
+
+
+      <div class="circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_y18J9J_66c2be7d-52be-436a-93bd-cc98080a835d.webp" />
+        <p>تبلت</p>
+      </div>
+
+
+      <div class="circle-indicatorss1 swiper-slide">
+        <img src="./img/banner_CircleCategories_nQbD4J_f1e8e377-fb7e-4e4e-892e-54035463f101.webp" />
+        <p>شبکه و ارتباطات</p>
+      </div>
+
+    </div>
+    <div class="swiper-button-next slider1-next"></div>
+    <div class="swiper-button-prev slider1-prev"></div>
+
+  </div>
+
+  <div class="section-div">
+    <div class="section-header">
+      <h4>تکنوآف</h4>
+      <p class="see-all">
+        نمایش همه <a href="#"><img src="./img/chevron-left.svg" alt="مشاهده بیشتر" /></a>
+      </p>
+    </div>
+
+
+    <div class="swiper-container slider2" id="swiper2">
+      <div class=" product-cardd swiper-wrapper ">
+
+        <div class="product-card swiper-slide">
+
+          <img class="swiper-img" src="./img/small_product-TLP-71324_20da646a-7480-421d-bbef-1bd9e83d7e7b.webp"
+            alt="گوشی موبایل آنر">
+          <p class="product-name">گوشی موبایل آنر <span>X7c</span></p>
+          <h4 class="product-price">11.990.000 <span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+
+        <div class="product-card swiper-slide">
+
+          <img class="swiper-img" src="./img/small_product-TLP-69015_f4d23762-985a-455b-9664-393d01ee41e8.webp"
+            alt="گوشی موبایل  سامسونگ">
+          <p class="product-name">گوشی موبایل سامسونگ <span>s25 ultra 5G</span></p>
+          <h4 class="product-price">110,799,000 <span class="currency">تومان</span> <span class="discount">3%</span>
+          </h4>
+        </div>
+
+        <div class="product-card swiper-slide">
+
+          <img class="swiper-img" src="./img/small_product-TLP-76419_f1e2310c-8a01-47dc-8a9a-be4d02825825.webp"
+            alt="گوشی موبایل">
+          <p class="product-name">گوشی موبایل شیایومی مدل <span>Redmi Note 14 4G</span></p>
+          <h4 class="product-price">14,399,000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide ">
+
+          <img class="swiper-img" src="./img/small_product-TLP-9996_e3833633-5b82-4dd4-a365-463c3bf70dd3.webp"
+            alt="گوشی موبایل ">
+          <p class="product-name">دوربین عکاسی کانن<span>Eos 250D</span></p>
+          <h4 class="product-price">44,999,000<span class="currency">تومان</span> <span class="discount">5%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide">
+
+          <img class="swiper-img" src="./img/small_product-TLP-2262.webp" alt="گوشی موبایل آنر">
+          <p class="product-name">هارد اکسترنال و سترن دیجیتال مدل<span>My passport</span></p>
+          <h4 class="product-price">4,120,000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide">
+
+          <img class="swiper-img" src="./img/small_product-TLP-31745_692d42fa-23c4-4ef9-9f58-cad26b27e3a6.webp"
+            alt="گوشی موبایل آنر">
+          <p class="product-name">هندزفری بلوتوثی شایومی مدل<span>Redmi Buds Pro</span></p>
+          <h4 class="product-price">3,599,000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide ">
+
+          <img class="swiper-img" src="./img/small_product-TLP-67050_843e6c10-e40d-408b-bacf-3973cb101a44.webp"
+            alt="گوشی موبایل آنر">
+          <p class="product-name">مادربرد ایسوس مدل<span>ROG STRLX</span></p>
+          <h4 class="product-price">40,988,000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+      </div>
+      <div class="swiper-button-next slider2-next"></div>
+      <div class="swiper-button-prev slider2-prev"></div>
+    </div>
+  </div>
+
+  <div class="card-div">
+    <div class="card">
+      <img src="./img/banner_CenterTripletBanners_1g364x_da51b3ad-ef38-4163-bbd8-b4bb7999508e.webp" />
+      <img src="./img/banner_CenterTripletBanners_oaju3B_e26312d0-c6bb-4270-ac8c-e39e2418da35.webp" />
+      <img src="./img/banner_CenterTripletBanners_wR0Mq2_126d0a54-0b74-4d1d-8834-8bee4c589a95.webp" />
+    </div>
+  </div>
+
+
+  <div class="section-div1">
+    <div class="section-header1">
+      <h4>پرچمداران هوشمند</h4>
+      <p class="see-all">
+        نمایش همه <a href="#"><img src="./img/chevron-left.svg" alt="مشاهده بیشتر" /></a>
+      </p>
+    </div>
+    <div class="swiper-container swiper12 slider3" id="swiper3">
+      <div class=" product-cardd swiper-wrapper ">
+
+        <div class="product-card swiperimg swiper-slide">
+
+          <img src="./img/small_product-TLP-29316_f54c0b3b-8365-452f-af6d-343ad0132c7f.webp" alt="گوشی موبایل آنر">
+          <p class="product-name">گوشی موبایل آنر مدل 90ظرفیت<span>256</span></p>
+          <h4 class="product-price">21.950.000 <span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+
+        <div class="product-card swiper-slide">
+
+          <img src="./img/small.webp" alt="گوشی موبایل  سامسونگ">
+          <p class="product-name">گوشی موبایل اپل مدل<span>ipohe13</span></p>
+          <h4 class="product-price">93,020,000 <span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide">
+
+          <img src="./img/small_(1).webp" alt="گوشی موبایل">
+          <p class="product-name">گوشی موبایل شیایومی<span>Note 14 4G</span></p>
+          <h4 class="product-price">38,399,000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide ">
+
+          <img src="./img/small_product-TLP-9996_e3833633-5b82-4dd4-a365-463c3bf70dd3.webp" alt="گوشی موبایل ">
+          <p class="product-name">دوربین عکاسی کانن<span>Eos 250D</span></p>
+          <h4 class="product-price">44,999,000<span class="currency">تومان</span> <span class="discount">5%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide">
+
+          <img src="./img/small_product-TLP-2262.webp" alt="گوشی موبایل آنر">
+          <p class="product-name">هارد اکسترنال و سترن دیجیتال مدل<span>My passport</span></p>
+          <h4 class="product-price">4,120,000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide">
+
+          <img src="./img/small_product-TLP-31745_692d42fa-23c4-4ef9-9f58-cad26b27e3a6.webp" alt="گوشی موبایل آنر">
+          <p class="product-name">هندزفری بلوتوثی شایومی مدل<span>Redmi Buds Pro</span></p>
+          <h4 class="product-price">3,599,000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide ">
+
+          <img src="./img/small_product-TLP-67050_843e6c10-e40d-408b-bacf-3973cb101a44.webp" alt="گوشی موبایل آنر">
+          <p class="product-name">مادربرد ایسوس مدل<span>ROG STRLX</span></p>
+          <h4 class="product-price">40,988,000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+      </div>
+      <div class="swiper-button-next slider2-next"></div>
+      <div class="swiper-button-prev slider2-prev"></div>
+    </div>
+  </div>
+  </div>
+  <div class="static-p">
+    <p>برترین های موبایل</p>
+  </div>
+  <div class="static">
+    <div>
+      <img src="./img/static_phone_honor_new.webp">
+      <h1>آنر</h1>
+    </div>
+    <div> <img src="./img/static_phone_poco_new.webp">
+      <h1>پوکو</h1>
+    </div>
+    <div><img src="./img/static_phone_samsung_new.webp" alt="">
+      <h1>سامسونگ</h1>
+    </div>
+    <div><img src="./img/static_phone_xiaomi_new.webp" alt="">
+      <h1>شیایومی</h1>
+    </div>
+
+    <div><img src="./img/static_phone_iphone_new.webp">
+      <h1>ایفون</h1>
+    </div>
+  </div>
+
+
+
+  <div class="bannerr">
+    <img src="./img/banner_cc.webp" alt="">
+  </div>
+
+  <div class="section-div1">
+    <div class="section-header1">
+      <h4>لپ‌تاپ‌ها در تکنولایف</h4>
+      <p class="see-all">
+        نمایش همه <a href="#"><img src="./img/chevron-left.svg" alt="مشاهده بیشتر" /></a>
+      </p>
+    </div>
+    <div class="swiper-container swiper12 slider3" id="swiper3">
+      <div class=" product-cardd swiper-wrapper ">
+
+        <div class="product-card swiper-slide">
+
+          <img src="./img/b4.webp" alt="گوشی موبایل آنر">
+          <p class="product-name">لپ‌تاپ‌ لنوو 15.6اینچی مدل<span>LOQ i5</span></p>
+          <h4 class="product-price">58.800.000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+
+        <div class="product-card swiper-slide">
+
+          <img src="./img/b2.webp" alt="گوشی موبایل  سامسونگ">
+          <p class="product-name">لپ‌تاپ‌ 14.2 اپل مدل<span>MacBook Pro MX2E3 </span></p>
+          <h4 class="product-price">93,020,000 <span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide">
+
+          <img src="./img/b3.webp" alt="گوشی موبایل">
+          <p class="product-name">لپ‌تاپ‌ دل 14اینچی مدل <span>latitude</span></p>
+          <h4 class="product-price">82.499.000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide ">
+
+          <img src="./img/b1.webp" alt="گوشی موبایل ">
+          <p class="product-name">لپ‌تاپ‌ مایکروسافت 13.8 اینچی<span>surface laptop</span></p>
+          <h4 class="product-price">105.800.000<span class="currency">تومان</span> <span class="discount">5%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide">
+
+          <img src="./img/b8.webp" alt="گوشی موبایل آنر">
+          <p class="product-name">لپ‌ تاپ‌ لنوو 16 اینچی مدل<span>legion</span></p>
+          <h4 class="product-price">131.000.000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide">
+
+          <img src="./img/b7.webp" alt="گوشی موبایل آنر">
+          <p class="product-name">لپ‌ تاپ‌ لنوو مدل <span>legion</span></p>
+          <h4 class="product-price">117.000.000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+
+        <div class="product-card swiper-slide ">
+
+          <img src="./img/b6.webp" alt="گوشی موبایل آنر">
+          <p class="product-name">لپ‌ تاپ‌ ایسوس 15.6 اینچی مدل<span>vivobook 15 x1504va</span></p>
+          <h4 class="product-price">40.200.000<span class="currency">تومان</span> <span class="discount">3%</span></h4>
+        </div>
+      </div>
+      <div class="swiper-button-next slider2-next"></div>
+      <div class="swiper-button-prev slider2-prev"></div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="static-p">
+    <p>برترین‌های لپ‌تاپ
+    </p>
+  </div>
+  <div class="static1">
+    <div>
+      <img src="./img/l1.webp">
+      <h1>ایسوس</h1>
+    </div>
+    <div> <img src="./img/l2.webp">
+      <h1>اچ پی</h1>
+    </div>
+    <div><img src="./img/l3webp.webp" alt="">
+      <h1>لنوو</h1>
+    </div>
+
+    <div><img src="./img/l6.webp">
+      <h1>ایسر</h1>
+    </div>
+  </div>
+
+
+  <div class="banners_homepage">
+    <div class="banners"><img src="./img/f.webp" alt="">
+      <img src="./img/fdgif.gif" alt="">
+    </div>
+  </div>
+
+
+
+  <div class="button-divv">
+    <div>
+      <h3>گوشی بر اساس قیمت</h3>
+      <ul class="ul-button">
+        <li>گوشی ساده </li>
+        <li>تا 15 میلیون </li>
+        <li>تا50میلیون</li>
+        <li>تا5میلیون</li>
+        <li>تا30میلیون</li>
+        <li>تا75میلیون</li>
+      </ul>
+    </div>
+    <div>
+      <h3>گوشی بر اساس ویژگی</h3>
+      <ul class="ul-button">
+        <li>5G</li>
+        <li>گیمینگ</li>
+        <li>دوربین</li>
+        <li>باتری</li>
+        <li>ضد آب</li>
+        <li>شارژ سریع </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="static-p">
+    <p>
+      برترین‌های هندزفری</p>
+  </div>
+  <div class="static1">
+    <div>
+      <img src="./img/l1.webp">
+      <h1>ایسوس</h1>
+    </div>
+    <div> <img src="./img/l2.webp">
+      <h1>اچ پی</h1>
+    </div>
+    <div><img src="./img/l3webp.webp" alt="">
+      <h1>لنوو</h1>
+    </div>
+
+    <div><img src="./img/l6.webp">
+      <h1>ایسر</h1>
+    </div>
+  </div>
+
+  <div class="text-div">
+    <div>
+      <p>فروشگاه اینترنتی تکنولایف</p>
+      <h3>
+        فروشگاه اینترنتی تکنولایف سال‌ها است که به‌عنوان بزرگترین فروشگاه کالای دیجیتال مشغول فعالیت است. از آن‌جا که
+        خرید اینترنتی همواره موجی از بی‌اعتمادی و شک را با خود به‌همراه داشته، نماد الکترونیکی می‌تواند خیال خیلی از
+        افراد را راحت کند. تکنولایف با داشتن نماد اعتماد الکترونیکی و عضویت در سازمان صنفی رایانه‌ای کشور، همچنین عضویت
+        در انجمن صنفی فروشگاه‌های اینترنتی، فضای ایمن برای خرید آنلاین را برای مشتریان خود ایجاد کرده است.
+
+        شما می‌توانید خرید کالای دیجیتال مانند خرید لپ تاپ ، گوشی موبایل در مدل‌ها و برندهای مختلف، لوازم جانبی موبایل ،
+        هدفون، و کلیه لوازم دیجیتال مدنظر خود را با بهترین قیمت، در فروشگاه تکنولایف به ثبت برسانید.</h3>
+    </div>
+    <div>
+      <p>خرید گوشی از تکنولایف
+      </p>
+      <h3>برای خیلی از کاربران، تکنولایف فروشگاه اینترنتی موبایل محسوب می‌شود. این بدان خاطر است که شما می‌توانید انواع
+        گوشی موبایل مورد نظر خود، از جمله گوشی شیائومی ، گوشی سامسونگ، گوشی هواوی، آیفون و دیگر برندها را در تکنولایف
+        به‌راحتی پیدا و با قیمتی مناسب، خریداری کنید. خرید گوشی موبایل، آن‌هم اینترنتی، می‌تواند کاری دشوار باشد؛ اما
+        شما می‌توانید با اطمینان کامل، گوشی موبایل مد نظرتان را از فروشگاه اینترنتی موبایل تکنولایف استعلام قیمت کرده و
+        خریداری کنید.</h3>
+    </div>
+  </div>
+
+
+  <div class="Logo3">
+
+    <img class="login-img" src="./img/logo_techno.svg" alt="">
+
+    <div class="Logo">
+      <div class="logo-div">
+        <div class="section">
+          <p>درباره ما</p>
+          <ul>
+            <li>تکنولایف در یک نگاه</li>
+            <li>اهداف و تعهد های ما</li>
+            <li>سوالات متداول</li>
+            <li>فروشگاه های حضوری</li>
+            <li>تماس با ما</li>
+          </ul>
+        </div>
+
+        <div class="section1">
+          <p>پرفروش ترین </p>
+          <ul>
+            <li>گوشی a16</li>
+            <li>گوشی pure 70</li>
+            <li>گوشیt14</li>
+            <li>آیفون16</li>
+            <li>گوشی Redmi note14</li>
+
+          </ul>
+        </div>
+
+        <div class="section2">
+          <p>دسترسی سریع</p>
+          <ul>
+            <li>بلاگ</li>
+            <li>خرید گوشی</li>
+            <li>گوشی سامسونگ</li>
+            <li>گوشی آیفون</li>
+            <li>گوشی شیائومی</li>
+            <li>گوشی پوکو</li>
+            <li>قیمت گوشی</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-div">
+      <div class="footer1">
+        <div class="footer-p">
+          <p>شبکه های اجتماعی</p>
+          <img src="./img/footerImg7ujbp2.webp" alt="">
+          <img src="./img/footerImgcHi6f1.webp" alt="">
+          <img src="./img/footerImgLueLo3.webp" alt="">
+          <img src="./img/footerImgsnd3HZ.webp" alt="">
+        </div>
+        <div class="footerr">
+          <p>ارتباط با ما</p>
+          <h3 class="footer-t">تلفن:<span>021-91077500-021-47708000</span></h3>
+          <h3 class="footer-e"><span>info@technolife.ir</span>:ایمیل</h3>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footerre">
+      <div class="footer-img">
+        <img src="./img/f22.webp" alt="" srcset="">
+        <img src="./img/fff3.webp" alt="" srcset="">
+        <img src="./img/fff4.webp" alt="" srcset="">
+        <img src="./img/footerImg9b2XMW.webp" alt="" srcset="">
+      </div>
+
+      <div class="footer-logo">
+        <img src="./img/logo.png" alt="">
+        <!-- <img src="./img/download.svg" alt=""> -->
+        <img src="./img/c4.webp" alt="">
+        <img src="./img/c5.webp" alt="">
+      </div>
+    </div>
+
+    <footer>
+      <h3>تمامی حقوق مادی و معنوی این سایت متعلق به تکنولایف می‌باشد</h3>
+    </footer>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./add.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+[{
+    "id":1,
+    "name":"گوشی موبایل آنر ",
+    "price":29,
+    "image":"./img/small_product-TLP-71324_20da646a-7480-421d-bbef-1bd9e83d7e7b.webp",
+"alt":"bag product"
+},
+{
+    "id":2,
+    "name":"گوشی موبایل سامسونگ ",
+    "price":3,
+    "image":"./img/small_product-TLP-69015_f4d23762-985a-455b-9664-393d01ee41e8.webp",
+"alt":"pen product"
+},
+{
+    "id":3,
+    "name":"Redmi Note 14 4G",
+    "price":12,
+    "image":"./img/small_product-TLP-76419_f1e2310c-8a01-47dc-8a9a-be4d02825825.webp",
+"alt":"note Book product " 
+},
+{
+    "id":4,
+    "name":"دوربین",
+    "price":11,
+    "image":"./img/small_product-TLP-9996_e3833633-5b82-4dd4-a365-463c3bf70dd3.webp",
+"alt":"colored pencils product"
+},
+{
+    "id":5,
+    "name":"هارد",
+    "price":3,
+    "image":"./img/small_product-TLP-2262.webp",
+"alt":"pencil product"
+},
+{
+    "id":6,
+    "name":"Redmi Buds Pro",
+    "price":8,
+    "image":"./img/small_product-TLP-31745_692d42fa-23c4-4ef9-9f58-cad26b27e3a6.webp",
+"alt":"ruler product"
+},
+{
+    "id":7,
+    "name":"مادربرد",
+    "price":17,
+    "image":"./img/small_product-TLP-67050_843e6c10-e40d-408b-bacf-3973cb101a44.webp",
+"alt":"mug product"
+},
+{
+    "id":8,
+    "name":"ROG STRLX",
+    "price":2,
+    "image":"./img/b4.webp",
+"alt":"Eraser product"
+},
+{
+    "id":9,
+    "name":"Glue stick",
+    "price":5,
+    "image":"./img/b8.webp",
+"alt":"Glue stick product"
+}
+]
