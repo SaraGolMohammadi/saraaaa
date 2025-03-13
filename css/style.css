@@ -25,7 +25,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 #products > div{
 width: 320px;
@@ -89,13 +89,23 @@ margin-bottom: 40px;
     border-radius: 40%;
 }
 #cart{
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* display: grid;
     grid-template-columns: repeat(2,380px);
     gap: 50px;
-    margin-left: 180px;
+    margin-left: 180px; */
     margin-top: 50px;
 }
 #cart-list{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px; */
     width: 530px;
 }
 #cart-list h5{
@@ -175,8 +185,9 @@ margin-bottom: 40px;
             padding: 20px;
             border-radius: 20px;
             color: gray;
-            max-height: 150px;
-          
+            min-height: 20vh;
+            /* min-width: 10px; */
+            
           }
           #total-price h5{
             margin-left: 120px;
@@ -214,25 +225,28 @@ margin-bottom: 40px;
         }
         .search-container {
             position: relative;
-            /* width: 300px; */
+   
         }
         
         .input-div {
-            width:550px;
-            height: 40px;
-            padding: 10px 60px 10px 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            outline: none;
-            font-size: 14px;
-            text-align: right;
-            background-color: rgb(245, 242, 242);
-             /* margin-right: 350px; */
-        }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 600px;
+            text-align: center;
         
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            background: #fff;
+            position: relative;
+            box-sizing: border-box; 
+        }
+     
         .img-input {
             position: absolute;
-            right: -20px;
+            right: -70px;
             top: 50%;
             transform: translateY(-50%);
             width: 200px;
@@ -240,17 +254,24 @@ margin-bottom: 40px;
             cursor: pointer;
             padding-left: 20px;
         }
+        .auth-contener{
+            display: flex;
+    align-items: center; /* هم‌راستا کردن input و آیکون */
+    justify-content: flex-start; /* چیدمان به سمت چپ */
+ margin-right: 450px;
+        }
         
         .auth-links {
             display: flex;
+            justify-content:center;
             align-items: center;
-            margin-right: 250px;
-            border:1px solid black;
+               border:1px solid black;
             border-radius: 5px;
             width: 150px;
             height: 40px;
             padding-left: 15px;
             font-weight: bold;
+            /* margin-left: 250px; */
         }
         
         .auth-links a {
@@ -280,7 +301,7 @@ margin-bottom: 40px;
             padding-right: 10px;
             width: 40px;
             height: 36px;
-            margin-left:120px;
+            /* margin-left:120px; */
         }
         .shoppin h3{
             display: none;
@@ -289,6 +310,8 @@ margin-bottom: 40px;
         .auth-contener{
             display: flex;
             flex-direction:row-reverse;
+            justify-content: center;
+            align-items: center;
             gap: 10px;
         }
         .hamburger-icon {
@@ -413,271 +436,186 @@ margin-bottom: 40px;
                 background: #dad5d5; /* رنگ خط */
             }
           
-            @media (min-width:320px) and (max-width:480px) {
-                .banner{
-                 width: 180%;
+            @media (max-width: 480px) {
+                .banner {
+                    width: 100%;
                 }
-                .contenter{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .contenter-img{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100px;
-                    right: 190%;
-                }
-                .contenter img{
-                    margin-left: 100%;
-                }
-              
-                .input-div{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 70%;
-                    margin-left: 200px;
-                }
-               .shoppin img{
-                /* margin-right:190%;ب */
-                margin-left: -1px;
-               }
-                 .search-container img{
-                    margin-right: -40%;
-                 }
-                .auth-contener{
-                    display: flex;
-                    /* flex-direction: row; */
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: 130%;
-                    margin-bottom: 20px;
-                }
-               .auth-links{
-                white-space: nowrap;
-                font-size: 12px;
-               }
-            .div-contenter ul{
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
-            /* gap: 20px; */
-            text-align: right;
-            margin-left: 105%;
-            white-space: nowrap;
-            }
-            .hamburger-menu{
-                margin-top: 45%;
-                margin-right:-42%;
-            }
-           
             
-               #cart{
+                .contenter, .contenter-img {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+            
+                .contenter img {
+                    margin-left: 0;
+                    width: 80%;
+                    max-width: 200px;
+                }
+            
+                .search-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    margin: 0 auto;
+                }
+            
+                .input-div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90%;
+                    max-width: 350px;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    padding: 10px;
+                    background: #fff;
+                }
+            
+                .input-div input {
+                    width: 100%;
+                    padding: 8px;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    text-align: center;
+                }
+            .img-input{
+                display: none;
+            }
+                .shoppin img {
+                    margin-left: 18px;
+                    width: 20px;
+                }
+               .shoppin{
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin-right: -52%;
+                /* margin-right: 10px; */
+               }
+                .auth-contener {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    /* margin: 20px 0; */
+                }
             
-            }
-            #total-price{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                /* margin-left: ; */
-                width: 250px;
-                height: 150px;
-                 /* padding-bottom: 120px; */
-                max-width: 400px;
-                /* height: 80%; */
-            }
-            #total-price h5{
-                font-size: 15px;
-                white-space: nowrap;
-            }
-            #total-price button{
-                margin-right: 80px;
-            bottom: 90%;
-                /* padding-bottom: 120px; */
-            }
-            #cart-list{
-                display: flex;
-                flex-direction: column;
-                width: 250px;
-                /* margin-left: 150px; */
-            }
-          #cart-info h4 {
-            font-size: 10px;
-          }
-          #cart-info p{
-            font-size: 10px;
-          }
-          #cart-control button{
-            width: 20;
-          }
-            #products{
-                margin-left: 75%;
-                width: 180px;
-            }
-            #products img{
-                 width: 90px;
-            }
-            #products h3{
-                font-size: 15px;
-            }
-            #products span{
-                font-size: 15px;
-            }
-            #product-info h3::before {
-                content: "";
-                position: absolute;
-                top: 60px;
-                right:85px;
-                width: 40%;
-                height: 2px; /* ضخامت خط */
-                background: #dad5d5; /* رنگ خط */
-            }
- 
-            }
-
-            @media (min-width:481px) and (max-width:768px) {
-                .banner{
+                .auth-links {
+                    font-size: 12px;
+                }
+            
+                .div-contenter ul {
+                    font-size: 28px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                }
+            
+                .hamburger-menu {
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            
+                #cart {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                #total-price {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    width: 250px;
+                    height: auto;
+                }
+            
+                #cart-list {
+                    display: flex;
+                    flex-direction: column;
                     width: 100%;
-                   }
-                   .contenter{
-                       display: flex;
-                       flex-direction: column;
-                       justify-content: center;
-                       align-items: center;
-                   }
-                   .contenter-img{
-                       display: flex;
-                       flex-direction: column;
-                       justify-content: center;
-                       align-items: center;
-                       width: 100px;
-                       right: 190%;
-                   }
-                   .contenter img{
-                       margin-left: 100%;
-                   }
-                 
-                   .input-div{
-                       display: flex;
-                       flex-direction: column;
-                       justify-content: center;
-                       align-items: center;
-                       width: 70%;
-                       margin-left: 190px;
-                   }
-                  .shoppin img{
-                   /* margin-right:190%; */
-                   margin-left: -2px;
-                  }
-                    .search-container img{
-                       margin-right: -25%;
-                    }
-                   .auth-contener{
-                       display: flex;
-                       /* flex-direction: row; */
-                       justify-content: center;
-                       align-items: center;
-                       margin-left: 120%;
-                       margin-bottom: 20px;
-                   }
-                  .auth-links{
-                   white-space: nowrap;
-                   font-size: 12px;
-                  }
-               .div-contenter ul{
-               font-size: 15px;
-               display: flex;
-               flex-direction: column;
-               /* gap: 20px; */
-               text-align: right;
-               margin-left: 100%;
-               white-space: nowrap;
-               }
-               .hamburger-menu{
-                   margin-top: 35%;
-                   margin-right:-22%;
-               }
-              
-               
-                  #cart{
-                   display: flex;
-                   flex-direction: column-reverse;
-                   justify-content: center;
-                   align-items: center;
-                   margin-right: -50%;
-               
-               }
-               #total-price{
-                   display: flex;
-                   flex-direction: column;
-                   align-items: center;
-                   text-align: center;
-                   /* margin-left: ; */
-                   width: 250px;
-                   height: 150px;
-                    /* padding-bottom: 120px; */
-                   max-width: 400px;
-                   /* height: 80%; */
-               }
-               #total-price h5{
-                   font-size: 15px;
-                   white-space: nowrap;
-               }
-               #total-price button{
-                   margin-right: 80px;
-               bottom: 90%;
-                   /* padding-bottom: 120px; */
-               }
-               #cart-list{
-                   display: flex;
-                   flex-direction: column;
-                   width: 250px;
-                   /* margin-left: 150px; */
-               }
-             #cart-info h4 {
-               font-size: 10px;
-             }
-             #cart-info p{
-               font-size: 10px;
-             }
-             #cart-control button{
-               width: 20;
-             }
-               #products{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-                   margin-left: 100%;
-                   width: 300px;
-               }
-               #products img{
-                    width: 90px;
-               }
-               #products h3{
-                   font-size: 15px;
-               }
-               #products span{
-                   font-size: 15px;
-               }
-               #product-info h3::before {
-                   content: "";
-                   position: absolute;
-                   top: 60px;
-                   right:85px;
-                   width: 40%;
-                   height: 2px; /* ضخامت خط */
-                   background: #dad5d5; /* رنگ خط */
-               }
+                    max-width: 300px;
+                    margin: 10px auto;
+                }
+            
+                #products {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
+            
+                #products img {
+                    width: 5%;
+                    max-width: 150px;
+                }
     
+                
             }
+            
+            @media (max-width: 768px) {
+                .banner {
+                    width: 100%;
+                }
+            
+                .contenter, .contenter-img {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+            
+                .input-div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 400px;
+                    max-width: 400px;
+                  
+                }
+                .img-input {
+                    left:250px;
+                    /* width: 50px; */
+                }
+            
+                .auth-contener {
+                    margin: 20px 0;
+                }
+            
+                #cart {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                #products {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+            
+                #products img {
+                    width: 70%;
+                    max-width: 200px;
+                }
+                .div-contenter ul{
+                    font-size: 15px;
+                    gap: 12px;
+                }
+            }
+            

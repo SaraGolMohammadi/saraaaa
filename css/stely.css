@@ -873,7 +873,7 @@ padding-bottom: 20px;
 
 
 
-@media (min-width:320px) and (max-width:480px) {
+@media (max-width: 480px) {
     .banner{
      width: 100%;
     }
@@ -886,9 +886,19 @@ padding-bottom: 20px;
     .contenter-img{
         width: 100px;
     }
-    .input-div{
-        width: 80%;
-        margin-right: 50px;
+    .img-input{
+        display: none;
+    }
+    .input-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:400px;
+        max-width: 350px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        background: #fff;
     }
     .auth-contener{
         display: flex;
@@ -950,6 +960,7 @@ button.next {
     margin-top: 0;
     overflow: hidden;
 }
+
 .discount{
     margin-top: 20%;
 }
@@ -965,18 +976,14 @@ button.next {
     width: 100%;
 }
 .section-div1{
+text-align: center;
     margin: 50px;
     height: 300px;
-    /* margin-top: 10px; */
-   
-    
-}
-.section-header1{
-    font-size: 15px;
-    gap: 100px;
-    white-space: nowrap;
-    margin-left: 70px;
-}
+    margin-right: 150px;    
+} 
+
+
+
 .swiper12 {
   height:500px;
 }
@@ -1071,7 +1078,7 @@ width:90%;
     margin-top: 40px;
   }
   .Logo::before {
-    left:30px;
+    left:300px;
 }
   .section{
     margin-left: 80px;
@@ -1106,12 +1113,18 @@ width:90%;
     margin-right: 100px;
     gap: 20px;
 }
-
+.section-header1{
+    font-size: 150px;
+    /* gap: 100px; */
+    white-space: nowrap;
+    background-color: #a21920;
+    margin-right: 100px;
+}
 
 
 
 }
-@media (min-width:481px) and (max-width:768px) {
+@media  (max-width:768px) {
     .banner{
         width: 100%;
        }
