@@ -227,11 +227,12 @@ margin-bottom: 40px;
             font-size: 14px;
             text-align: right;
             background-color: rgb(245, 242, 242);
+             /* margin-right: 350px; */
         }
         
         .img-input {
             position: absolute;
-            right: -70px;
+            right: -20px;
             top: 50%;
             transform: translateY(-50%);
             width: 200px;
@@ -439,15 +440,15 @@ margin-bottom: 40px;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 80%;
-                    margin-left: 182px;
+                    width: 70%;
+                    margin-left: 200px;
                 }
                .shoppin img{
-                /* margin-right:190%; */
-                margin-left: -2px;
+                /* margin-right:190%;ب */
+                margin-left: -1px;
                }
                  .search-container img{
-                    margin-right: -35%;
+                    margin-right: -40%;
                  }
                 .auth-contener{
                     display: flex;
@@ -481,7 +482,7 @@ margin-bottom: 40px;
                 flex-direction: column-reverse;
                 justify-content: center;
                 align-items: center;
-                margin-right: -42%;
+                margin-right: -52%;
             
             }
             #total-price{
@@ -521,11 +522,7 @@ margin-bottom: 40px;
             width: 20;
           }
             #products{
-                /* display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center; */
-                margin-left: 70%;
+                margin-left: 75%;
                 width: 180px;
             }
             #products img{
@@ -551,7 +548,7 @@ margin-bottom: 40px;
 
             @media (min-width:481px) and (max-width:768px) {
                 .banner{
-                    width: 180%;
+                    width: 100%;
                    }
                    .contenter{
                        display: flex;
@@ -577,7 +574,7 @@ margin-bottom: 40px;
                        justify-content: center;
                        align-items: center;
                        width: 70%;
-                       margin-left: 290px;
+                       margin-left: 190px;
                    }
                   .shoppin img{
                    /* margin-right:190%; */
@@ -658,9 +655,11 @@ margin-bottom: 40px;
                width: 20;
              }
                #products{
-              
-                   margin-left: 74%;
-                   width: 200px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+                   margin-left: 100%;
+                   width: 300px;
                }
                #products img{
                     width: 90px;
